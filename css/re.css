@@ -1,0 +1,178 @@
+body {
+    background-size: 100%;
+    background-color: #fadbd8;
+    /*font-family: Arial, Helvetica, sans-serif; */
+}
+
+header {
+    background-color: #E88D42;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    width: 100%;
+}
+
+nav {
+    line-height: 30px;
+    background-color: #E88D42;
+    color: white;
+    height: 300px;
+    width: 150px;
+    float: left;
+    padding: 35px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+nav a {
+    color: white; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+section {
+    width: 750px;
+    float: left; 
+    padding: 10px;
+    color: black;
+    text-align: justify; 
+    font-size: 20px;
+    padding: 0 150px; 
+}
+
+/* Footer fijo al final */
+footer {
+    background-color: #E88D42;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main .blake {
+    text-align: center;
+    width: 40%; 
+}
+
+main .blake img {
+    max-width: 40%; 
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+main .blake img:hover {
+    transform: scale(1.05); 
+}
+
+h1 {
+    font-size: 50px;
+    color: white; 
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.container {
+    width: 100%; /* ocupa el 100% del ancho del contenedor */
+}
+
+.header {
+    padding: 2rem; /* padding en valores relativos */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* permite que los elementos se ajusten en varias filas */
+    justify-content: space-between; /* distribuye los elementos de manera uniforme */
+}
+
+.item {
+    flex: 1 1 30%; /* hace que cada elemento ocupe el 30% del espacio disponible */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* crea columnas automáticas */
+    gap: 20px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Ancho completo para la navegación */
+        height: auto; /* Ajusta la altura automáticamente */
+        float: none; /* Elimina el flotado */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    section {
+        width: 100%; /* Hace que la sección ocupe el 100% del ancho */
+        padding: 0 10px; /* Reduce el padding lateral */
+    }
+
+    h1 {
+        font-size: 30px; /* Reduce el tamaño del título en móviles */
+    }
+
+    main .blake {
+        width: 90%; /* Aumenta el ancho en móviles */
+    }
+
+    main .blake img {
+        max-width: 80%; /* Aumenta el ancho máximo de la imagen */
+    }
+
+    footer {
+        padding: 15px; /* Aumenta el padding en el footer */
+    }
+
+    table {
+        width: 100%; /* Hace que la tabla ocupe el 100% del ancho */
+    }
+
+    img {
+        width: 100px; /* Ajusta el tamaño de la imagen para móviles */
+        height: 100px;
+    }
+
+    .item {
+        flex: 1 1 100%; /* Hace que los elementos ocupen el 100% en móviles */
+    }
+}
